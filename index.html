@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-Friendly City</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader">
+    <div class="paw-print"></div>
+  </div>
+
+  <!-- Floating Background Pets -->
+  <div class="floating-pets">
+    <div class="floating-pet pet1"></div>
+    <div class="floating-pet pet2"></div>
+    <div class="floating-pet pet3"></div>
+    <div class="floating-pet pet4"></div>
+  </div>
+
+  <header>
+    <h2>🐾 Pet-Friendly City</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Volunteer</a>
+      <a href="#">Impact Stories</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Making Cities Paw-some! 🐾✨</h1>
+      <button id="join-btn">Join the Movement</button>
+    </div>
+    <!-- 3D Pet Animation -->
+    <div class="pet-animation"></div>
+  </section>
+
+  <!-- 3D Pet Model Section -->
+  <section class="section model-section">
+    <h2>Meet Our Mascot 🐕</h2>
+    <div id="pet-model-container"></div>
+    <div class="model-controls">
+      <button id="rotate-left">Rotate Left</button>
+      <button id="rotate-right">Rotate Right</button>
+    </div>
+  </section>
+
+  <section class="section form-section">
+    <h2>Become a Volunteer 🐶</h2>
+    <form id="volunteer-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Your City" required>
+      <select required>
+        <option disabled selected>Role Preference</option>
+        <option>Event Organizer</option>
+        <option>Pet Carer</option>
+        <option>Social Media Volunteer</option>
+      </select>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Impact Stories 🐕❤️</h2>
+    <div class="impact-stories">
+      <div class="story">
+        <h3>From Stray to Superstar</h3>
+        <p>Max found his forever home through our campaign and now helps elderly folks with therapy sessions.</p>
+      </div>
+      <div class="story">
+        <h3>Paws for a Cause</h3>
+        <p>Our city dog walk raised funds for a new community pet shelter. Tail wags all around!</p>
+      </div>
+      <div class="story">
+        <h3>The Rescue Crew</h3>
+        <p>Volunteers teamed up to save a litter of pups from a construction site. Now they're safe and sound. 🐶</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Pet Map Section -->
+  <section class="section map-section">
+    <h2>Pet-Friendly Locations 🗺️</h2>
+    <div id="pet-map"></div>
+    <div class="map-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="parks">Parks</button>
+      <button class="filter-btn" data-filter="cafes">Cafes</button>
+      <button class="filter-btn" data-filter="vets">Vets</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>🐾 Pet-Friendly City</h3>
+        <p>Making our community better for pets and people</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Volunteer</a>
+        <a href="#">Impact Stories</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: abhay4321pal@gmail.com</p>
+        <p>Phone: +9044462594</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">📱</a>
+          <a href="#" aria-label="Twitter">📱</a>
+          <a href="#" aria-label="Instagram">📱</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Pet-Friendly City(lucknow) All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Paw Print Background -->
+  <div class="paw-background"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
